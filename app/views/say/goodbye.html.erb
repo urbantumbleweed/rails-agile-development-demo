@@ -1,7 +1,10 @@
 <h1>Goodbye!</h1>
 <p>
-It was very nice having you here
+Remember: if a = 1 and b = 2, the addition is <%= 1+2 %>
 </p>
 <p>
-	Say <a href="/say/hello" title="">Hello</a>
+	Say <%= link_to "Hello", say_hello_path %> again.
 </p>
+<% for file in @files %>
+<p>file name is: <%= file %> </p>
+<% end %>
